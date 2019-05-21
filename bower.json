@@ -1,0 +1,18 @@
+{
+	"name": "ckeditor.collapsable",
+	"description": "Plugin for CK Editor collapsable element, supposed to be used with https://github.com/zipper/jquery.collapsable at front-end.",
+	"version": "1.0.0",
+	"main": ["plugin.js", "dialogs/collapsable.js", "icons/collapsable.png", "lang/en.js", "lang/cs.js", "lang/sk.js"],
+	"authors": [ "Radek Šerý <radek.sery@gmail.com>" ],
+	"homepage": "https://github.com/zipper/ckeditor.collapsable",
+	"license": "MIT",
+	"keywords": ["ckeditor", "ck-editor", "collapsable", "jquery-collapsable"],
+	"dependencies": {},
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"*.md",
+		"*.json"
+	]
+}

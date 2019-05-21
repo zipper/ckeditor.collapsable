@@ -18,6 +18,7 @@ $('.js-wysiwyg').ckeditor({
     
     collapsable: {
         useFallbackCSS: false,                               // Whether to use generic fallback CSS for CK editor
+        headingTag: 'h3',                                    // Tag used for a heading element
         bemClass: {
             block: 'wysiwyg-collapsable',                    // Main class assigned to block
             elements: {
@@ -45,6 +46,10 @@ $('.js-wysiwyg').ckeditor({
 ### `useFallbackCSS`
 
 Whether to use default fallback CSS defined by plugin. If you don't include your custom CSS into editor, you might want to set this to `true`. If you have your own CSS with styles for this component included, leave this as `false`.
+
+### `headingTag`
+
+Tag used for a heading element. It is currently not possible to change it dynamically, but it has to be set on editor initialization. Default value is `h3`.
 
 ### `bemClass`
 

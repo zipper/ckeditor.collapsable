@@ -86,11 +86,11 @@ CKEDITOR.plugins.add('collapsable', {
 					allowedContent: 'p ul ol li br strong em; img[!src,alt]; a[!href]'
 				}
 			},
-			allowedContent: 'section(!' + bemClass.block + ', ' + additionalClass.block + ');' +
-			                '' + headingTag + '(!' + bemClass.elements.heading + ', ' + additionalClass.elements.heading + ');' +
-			                'a(!' + bemClass.elements.link + ', ' + additionalClass.elements.link + ');' +
-			                'span(!' + bemClass.elements.linkInner + ', ' + additionalClass.elements.linkInner + ');' +
-			                'div(!' + bemClass.elements.box + ', ' + additionalClass.elements.box + ');',
+			allowedContent: 'section(!' + bemClass.block + ', ' + additionalClass.block.split(' ').join(', ') + ');' +
+				'' + headingTag + '(!' + bemClass.elements.heading + ', ' + additionalClass.elements.heading.split(' ').join(', ') + ');' +
+				'a(!' + bemClass.elements.link + ', ' + additionalClass.elements.link.split(' ').join(', ') + ');' +
+				'span(!' + bemClass.elements.linkInner + ', ' + additionalClass.elements.linkInner.split(' ').join(', ') + ');' +
+				'div(!' + bemClass.elements.box + ', ' + additionalClass.elements.box.split(' ').join(', ') + ');',
 			requiredContent: 'section(' + bemClass.block + ')',
 			defaults: {
 				heading: (options.defaults && options.defaults.heading || editor.lang.collapsable.heading),

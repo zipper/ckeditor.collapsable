@@ -58,3 +58,9 @@ You can use this option for setting your own BEM (not necessarily BEM) classes f
 ### `additionalClass`
 
 If you need more than one class on any element, use this option to set them. Multiple classes can be separated by space as this string is directly used for `class` attribute value.
+
+## Changelog
+
+### 1.0.1
+
+- Multiple classes specified in `additionalClass` are now preserved even when CK Editor `allowedContent` is used (different value than `true`). 
